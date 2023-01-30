@@ -1,0 +1,4 @@
+<app-navbar *ngIf="navbar"></app-navbar>
+<app-panel (onToggeSideNav)="onToggeSideNav($event)"></app-panel>
+
+<app-nav-body [collapse]="isSideNavCollapsed" [screenWidth]="screenWidth"></app-nav-body>

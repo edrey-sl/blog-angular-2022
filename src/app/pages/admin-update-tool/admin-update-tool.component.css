@@ -1,0 +1,13 @@
+.img-previa {
+    margin: 1rem 0;
+    width: 14rem;
+    height: 8rem;
+}
+
+.swal-button {
+    background-color: #273c75 !important;
+}
+
+.swal2-styled.swal2-confirm {
+    background-color: #273c75 !important;
+}

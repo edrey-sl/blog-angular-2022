@@ -1,0 +1,76 @@
+<app-navbar *ngIf="navbar"></app-navbar>
+<h1 class="text-center my-5">Artículos </h1>
+<div class="container">
+
+    <div class="container">
+        <p class="title-category">categorías</p>
+        <div class="container-category">
+            <div class="items-cat" (click)="resetAll()"><a class="category-item">Todos</a></div>
+
+
+
+            <div class="items-cat" (click)="filtrar(category.id)" *ngFor="let category of Category; let control = index">
+                <a class="category-item">{{category.name}}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-publications">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <div class="container cont-cards-p">
+                    <div class="cards-p" *ngIf="status">
+                        <div class="cards-j" *ngFor="let data of Data | paginate: { itemsPerPage: 8, currentPage: page }; let control = index ">
+                            <div class="container-img">
+                                <img class="img-card" src="{{data.img}}" alt="">
+                                <div class="card-category">
+                                    <p class="text-center"><strong>{{data.categoria}}</strong></p>
+                                </div>
+                            </div>
+                            <a class="link-card" routerLink="../articulo/{{data.id_p}}">
+                                <h2 class="title-cards">{{data.title}}</h2>
+                                <p class="text-des-card">{{data.description}}</p>
+                                <div class="row text-center">
+                                    <div class="col-5">{{data.date}}</div>
+                                    <div class="col-7">{{data.autor}}</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="cards-p" *ngIf="statusfiltro">
+                        <div class="cards-j" *ngFor="let data of Filtrar | paginate: { itemsPerPage: 8, currentPage: page }; let control = index">
+                            <div class="container-img">
+                                <img class="img-card" src="{{data.img}}" alt="">
+                                <div class="card-category">
+                                    <p class="text-center"><strong>{{data.categoria}}</strong></p>
+                                </div>
+                            </div>
+                            <a class="link-card" routerLink="../articulo/{{data.id_p}}">
+                                <h2 class="title-cards">{{data.title}}</h2>
+                                <p class="text-des-card">{{data.description}}</p>
+                                <div class="row text-center">
+                                    <div class="col-5">{{data.date}}</div>
+                                    <div class="col-7">{{data.autor}}</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="pagination-tool">
+        <div class="text-center my-5 pb-5" *ngIf="status">
+            <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+        </div>
+
+        <div class="text-center my-5 pb-5" *ngIf="statusfiltro">
+            <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+        </div>
+    </div>
+
+</div>
+<app-footer></app-footer>

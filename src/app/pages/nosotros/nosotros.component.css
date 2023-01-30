@@ -1,0 +1,30 @@
+.pic-ours {
+    width: 100%;
+    height: auto;
+    background-size: 100% 100%;
+    border-radius: 10px;
+}
+
+.cont-img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic-ours2 {
+    width: 15rem;
+    height: 15rem;
+    background-size: contain;
+    border-radius: 50%;
+    padding-bottom: 2rem;
+}
+
+.team {
+    padding-top: 5rem;
+}
+
+.text-ours {
+    text-align: justify;
+}

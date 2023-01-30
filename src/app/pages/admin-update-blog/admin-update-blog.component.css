@@ -1,0 +1,32 @@
+.container-cards {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: auto;
+    height: auto;
+    width: 100%;
+}
+
+.container-items {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 31%;
+    min-height: 15rem;
+    height: 15rem;
+    margin: 1rem;
+    -webkit-box-shadow: 0px 1px 14px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 14px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 14px -3px rgba(0, 0, 0, 0.75);
+}
+
+.container-content {
+    margin: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .container-items {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        margin-top: 0;
+    }
+}

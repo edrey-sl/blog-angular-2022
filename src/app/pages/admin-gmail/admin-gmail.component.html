@@ -1,0 +1,18 @@
+<table datatable [dtOptions]="dtOptions" class="row-border hover" [dtTrigger]="dtTrigger">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Correo</th>
+            <th>Eliminar</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let correo of ArregloCorreo; let control = index">
+            <th>{{correo.date}}</th>
+            <th>{{correo.email}}</th>
+            <th><a class="link-delete" (click)="deleteCorreo(correo.id,control)"><i class="fa-solid fa-trash-can text-danger fa-2x"></i></a></th>
+        </tr>
+
+    </tbody>
+</table>

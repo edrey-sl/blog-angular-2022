@@ -1,0 +1,236 @@
+.img-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-category {
+    position: absolute;
+    width: 60%;
+    height: 2rem;
+    border-radius: 5rem;
+    bottom: 8%;
+    left: 3%;
+    background-color: #273c75df;
+    color: #fff;
+}
+
+.title-cards {
+    font-size: 21px;
+    text-align: justify;
+    font-weight: 600;
+    margin: 0.5rem;
+}
+
+.text-des-card {
+    margin: 0.5rem;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.4rem;
+}
+
+.link-card {
+    text-decoration: none;
+    color: #000;
+}
+
+.btn-primary {
+    background-color: #273c75 !important;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .cont-cards-p {
+        margin-top: 20rem;
+    }
+    .cards-p {
+        padding-bottom: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards-j {
+        width: 100%;
+        height: 25rem;
+        margin: 0.5rem;
+        background-color: #273c750b;
+        border-radius: 1rem;
+        -webkit-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+    }
+    .container-img {
+        width: 100%;
+        height: 40%;
+        position: relative;
+        display: inline-block;
+        border-radius: 1rem 1rem 0 0;
+        -webkit-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .cont-cards-p {
+        margin-top: 20rem;
+    }
+    .cards-p {
+        padding-bottom: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards-j {
+        width: 100%;
+        height: 25rem;
+        margin: 0.5rem;
+        background-color: #273c750b;
+        border-radius: 1rem;
+        -webkit-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+    }
+    .container-img {
+        width: 100%;
+        height: 40%;
+        position: relative;
+        display: inline-block;
+        border-radius: 1rem 1rem 0 0;
+        -webkit-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .cont-cards-p {
+        margin-top: 10rem;
+    }
+    .cards-p {
+        padding-bottom: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards-j {
+        width: 45%;
+        height: 25rem;
+        margin: 0.5rem;
+        padding-bottom: 2rem;
+        background-color: #273c750b;
+        border-radius: 1rem;
+        -webkit-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+    }
+    .container-img {
+        width: 100%;
+        height: 40%;
+        position: relative;
+        display: inline-block;
+        border-radius: 1rem 1rem 0 0;
+        -webkit-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .cont-cards-p {
+        margin-top: 0rem;
+    }
+    .cards-p {
+        padding-bottom: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards-j {
+        width: 22%;
+        height: auto;
+        padding-bottom: 5rem;
+        margin: 0.5rem;
+        background-color: #273c750b;
+        border-radius: 1rem;
+        -webkit-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+    }
+    .container-img {
+        width: 100%;
+        height: 10rem;
+        position: relative;
+        display: inline-block;
+        border-radius: 1rem 1rem 0 0;
+        -webkit-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {
+    .cont-cards-p {
+        margin-top: 0rem;
+    }
+    .cards-p {
+        padding-bottom: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .cards-j {
+        padding-bottom: 2rem;
+        width: 22%;
+        min-height: 20rem;
+        height: 25rem;
+        margin: 0.5rem;
+        background-color: #273c750b;
+        border-radius: 1rem;
+        -webkit-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+    }
+    .container-img {
+        width: 100%;
+        height: 10rem;
+        position: relative;
+        display: inline-block;
+        border-radius: 1rem 1rem 0 0;
+        -webkit-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+        box-shadow: 7px 7px 5px -6px rgba(0, 0, 0, 0.75);
+    }
+}

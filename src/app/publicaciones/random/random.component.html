@@ -1,0 +1,22 @@
+<div class="container cont-cards-p">
+    <h1 class="text-center my-4 pb-5">Publicaciones recientes</h1>
+    <div class="cards-p">
+        <div class="cards-j" *ngFor="let cards of Random; let control = index">
+            <div class="container-img">
+                <img class="img-card" src="{{cards.img}}" alt="">
+                <div class="card-category">
+                    <p class="text-center"><strong>{{cards.categoria}}</strong></p>
+                </div>
+            </div>
+            <a class="link-card" (click)="newPublication(cards.id_p)">
+                <h2 class="title-cards">{{cards.title}}</h2>
+                <p class="text-des-card">{{cards.description}}</p>
+                <div class="row text-center">
+                    <div class="col-5">{{cards.date}}</div>
+                    <div class="col-7">{{cards.autor}}</div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>

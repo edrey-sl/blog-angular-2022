@@ -1,0 +1,29 @@
+<div class="container-options" *ngIf="status">
+
+    <div routerLink='add' class="item-options" (click)="hide()">
+
+        <div class="container-icon">
+            <div class="icon-item">
+                <i class="fa-solid fa-square-plus fa-3x"></i>
+                <p>Agregar</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div routerLink="update" (click)="hide()" class="item-options">
+        <div class="container-icon">
+            <div class="icon-item">
+                <i class="fa-solid fa-pen-to-square fa-3x"></i>
+                <p class="pt-1">Editar</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div *ngIf="btnStatus">
+    <button class="btn btn-lg btn-primary" (click)="show()">Regresar</button>
+</div>
+
+<router-outlet *ngIf="!status"></router-outlet>

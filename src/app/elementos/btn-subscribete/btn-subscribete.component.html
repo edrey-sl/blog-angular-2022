@@ -1,0 +1,11 @@
+<div class="cont-inputs">
+    <form [formGroup]="formularioSubs" (submit)="saveEmail()">
+        <input type="email" placeholder=" micorreo@gmail.com" formControlName="emailSubs" class="input-subs" name="" id="">
+        <input type="submit" class="button-subs" value="Enviar">
+
+
+    </form>
+</div>
+<div style="margin-left: 1rem;">
+    <span class="text-danger" *ngIf="emailSubs && emailSubs.invalid && emailSubs.touched">Ingresa un correo</span>
+</div>

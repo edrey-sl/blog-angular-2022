@@ -1,0 +1,24 @@
+.btn-primary {
+    background-color: #273c75 !important;
+}
+
+.cont-login {
+    position: relative;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.container-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-login {
+    width: 20rem;
+    height: 35rem;
+}

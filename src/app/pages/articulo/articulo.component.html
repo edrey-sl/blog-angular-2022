@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" *ngIf="navbar">
+    <div class="container">
+        <a class="navbar-brand" href="#">EduBlog</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="mx-auto"></div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link sm-mx-0 mx-2" routerLink="../../inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sm-mx-0 mx-2" routerLink="../../publicaciones">Publicaciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sm-mx-0 mx-2" routerLink="../../nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sm-mx-0 mx-2" routerLink="../../contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sm-mx-0 mx-2" routerLink="../../login">Sesion</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container ">
+    <div class="cj-publication">
+        <div *ngFor="let dato of Articulo">
+            <h1 class="mt-5 pb-2">{{dato?.title}}</h1>
+
+            <div class="c-autor">
+                <img class="img-autor" src="{{dato?.photo}}" alt="{{dato?.autor}}" draggable="true">
+                <p class="autor">{{dato?.autor}}</p>
+                <p class="fecha">{{dato?.date}}</p>
+            </div>
+
+            <div class="text-center my-5">
+                <img class="img-articulo" src="{{dato?.img}}" alt="{{dato?.title}}">
+            </div>
+
+            <markdown ngPreserveWhitespaces>
+                {{dato.html}}
+            </markdown>
+        </div>
+    </div>
+</div>
+<app-random (idEnviar)="newPost($event)"></app-random>
+<app-footer></app-footer>

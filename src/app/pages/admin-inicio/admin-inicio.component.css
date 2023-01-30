@@ -1,0 +1,49 @@
+.container-items {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.items {
+    width: 25%;
+    height: 15rem;
+    background-color: #273c75;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.container-text {
+    padding-top: 4rem;
+    position: relative;
+    text-align: center;
+}
+
+.items-cantidad {
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .container-text {
+        padding-top: 2rem;
+    }
+    .items {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-top: 1rem;
+    }
+    .items-cantidad {
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+}

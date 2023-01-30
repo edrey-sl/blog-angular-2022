@@ -1,0 +1,57 @@
+.img-autor {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+
+.cj-publication {
+    width: 100%;
+    height: auto;
+    min-height: 80rem !important;
+}
+
+.c-autor {
+    position: relative;
+}
+
+.autor {
+    position: absolute;
+    top: 1rem;
+    left: 5rem;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.fecha {
+    position: absolute;
+    top: 2.3rem;
+    left: 5rem;
+    font-size: 15px;
+}
+
+.img-articulo {
+    width: 60%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+nav {
+    background-color: #273c75 !important;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 18px;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .img-articulo {
+        width: 90%;
+        height: auto;
+        border-radius: 1rem;
+    }
+}

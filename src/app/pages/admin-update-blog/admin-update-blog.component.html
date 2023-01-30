@@ -1,0 +1,16 @@
+<h3 class="text-center my-5">
+    Articulos</h3>
+
+<div class="container-cards">
+    <div class="container-items" *ngFor="let data of Articulos  | paginate: { itemsPerPage: 6, currentPage: page}; let icontrol = index">
+        <div class="container-content">
+            <p class="h5">{{data.title}}</p>
+            <p>{{data.description}}</p>
+            <button class="btn btn-primary" routerLink="../vista/{{data.id_p}}"><i class="fa-solid fa-pen-to-square"></i> Editar</button>
+            <button class="btn btn-danger m-1" (click)="eliminarArticulo(data.id_p, icontrol)"><i class="fa-solid fa-trash-can"></i> Eliminar</button>
+        </div>
+    </div>
+</div>
+<div class="text-center my-5">
+    <pagination-controls (pageChange)="page = $event" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+</div>

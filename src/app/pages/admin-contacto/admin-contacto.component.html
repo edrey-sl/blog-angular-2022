@@ -1,0 +1,25 @@
+<table datatable [dtOptions]="dtOptions" class="row-border hover" [dtTrigger]="dtTrigger">
+    <thead>
+        <tr>
+            <th>Fecha</th>
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Asunto</th>
+            <th>Mensaje</th>
+            <th>Eliminar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let contacto of ArregloContacto; let control = index">
+            <th>{{contacto.date}}</th>
+            <th>{{contacto.name}}</th>
+            <th>{{contacto.email}}</th>
+            <th>{{contacto.subject}}</th>
+            <th>{{contacto.message}}</th>
+            <th>
+                <a class="link-delete" (click)="deleteContacto(contacto.id,control)"><i class="fa-solid fa-trash-can text-danger fa-2x"></i></a>
+            </th>
+        </tr>
+
+    </tbody>
+</table>

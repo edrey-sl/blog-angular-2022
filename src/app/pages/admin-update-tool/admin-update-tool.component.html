@@ -1,0 +1,39 @@
+<p class="h3 text-center">Actualizando</p>
+
+<div class="container">
+
+    <form [formGroup]="formUpdate" (submit)="actualizar()">
+        <div class="form-group">
+            <label for="" class="form-label">Categoria</label>
+            <select formControlName="categoria" value="{{fk_categoria}}" class="form-select form-select-sm" aria-label=".form-select-sm example">
+        <option value="{{data.id}}" *ngFor="let data of Categorias">{{data.name}}</option>
+      </select>
+        </div>
+        <div class="form-group mt-1">
+            <label for="" class="form-label">Titulo</label>
+            <input type="text" formControlName="title" class="form-control">
+        </div>
+        <div class="form-group mt-1">
+            <label for="" class="form-label">Imagen</label>
+            <input type="file" (change)="guardarImagen($event)" class="form-control" name="" id="">
+            <img class="img-previa" src="{{previaImg}}" *ngIf="previaImg" alt="">
+            <img class="img-previa" src="{{picture_actual}}" *ngIf="picture_new" alt="">
+        </div>
+        <div class="form-group mt-1">
+            <label for="" class="form-label">Descripcion</label>
+            <textarea formControlName="description" class="form-control" id="" cols="10" rows="3"></textarea>
+        </div>
+        <div class="form-group mt-1">
+            <label for="" class="form-label">Contenido</label>
+
+            <angular-editor formControlName="html" [config]="config"></angular-editor>
+
+
+        </div>
+
+        <app-spinkit [hidden]="spinnerActivo"></app-spinkit>
+        <div class="form-group text-center mt-1">
+            <input type="submit" class="btn btn-lg btn-primary my-5" value="Enviar">
+        </div>
+    </form>
+</div>
